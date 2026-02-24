@@ -3,7 +3,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home.jsx';
-import NotFound from './components/NotFound.jsx';
+import NotFound from './pages/NotFound.jsx';
 import Users from './pages/Users.jsx';
 import AboutUs from './pages/AboutUs.jsx';
 import Product from './components/Product.jsx';
@@ -28,11 +28,11 @@ const router = createBrowserRouter([
         element: <ProductPage />
       },
       {
-        path: "/users",
+        path: "/users/:userId",
         element: <Users />
       },
       {
-        path: "/produt",
+        path: "/produt/:productId",
         element: <Product />
       },
       {

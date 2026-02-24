@@ -4,7 +4,7 @@ import './App.css'
 import { Outlet, Route, Routes } from 'react-router-dom'
 import Favorite from './pages/AboutUs'
 import Home from './components/Home'
-import NotFound from './components/NotFound'
+import NotFound from './pages/NotFound'
 import Navbar from './components/Navbar'
 function App() {
 
