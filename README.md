@@ -1,3 +1,7 @@
+This is project, where i have used dynamic routing and use {createBrowserRouter and routerProvider} from 'react-router-dom'. 
+to make routing efficient you can say like production level routing.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
