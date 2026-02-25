@@ -3,8 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { PRODUCTS } from '../data/PRODUCTS';
 import ProductCard from '../components/ProductCard';
 import { CustomButton } from '../components/CustomButton';
-import Inputform from '../customHooks/Inputform';
-import NotFound from './NotFound';
+import Inputform from '../components/Inputform';
 
 const ProductPage = () => {
 

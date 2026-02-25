@@ -12,7 +12,7 @@ import Layout from './components/Layout.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import Dashboard from './components/Dashboard.jsx';
 import LoginPage from './pages/LoginPage.jsx';
-import Inputform from './customHooks/Inputform.jsx';
+import Inputform from './components/Inputform.jsx';
 
 //create dynamic routing routing.
 const router = createBrowserRouter([

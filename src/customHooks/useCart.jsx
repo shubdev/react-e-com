@@ -13,9 +13,7 @@ export function useCart() {
             if (existingItem) {
                 // Increase quantity if exist
                 return prevCart.map((item) =>
-                    item.id === product.id
-                        ? { ...item, qty: item.qty + 1 }
-                        : item
+                    item.id === product.id ? { ...item, qty: item.qty + 1 } : item
                 );
             } else {
                 return [...prevCart, { ...product, qty: 1 }];
@@ -23,5 +21,5 @@ export function useCart() {
         });
     };
 
-    return { cart, addToCart };
+    return { cart, addToCart, setCart };
 }

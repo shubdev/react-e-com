@@ -6,7 +6,8 @@ const ProductCard = ({ product }) => {
     // product = { title, price, category, rating, description, image }
     // console.log("prod", product);
 
-    const { cart, addToCart } = useCart()
+    const { cart, addToCart, setCart } = useCart()
+    addToCart(product);
 
     return (
         <>

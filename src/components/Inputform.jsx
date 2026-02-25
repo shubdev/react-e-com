@@ -1,14 +1,16 @@
 import React from 'react'
 import { useForm } from "react-hook-form";
-import { useCart } from './useCart';
+import { useCart } from '../customHooks/useCart';
 
 const Inputform = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const { cart, setCart } = useCart()
+    const { cart, setCart, addToCart } = useCart()
 
     const onSubmit = (data) => {
-        setCart(data);
+        addToCart(data)
+        console.log("formdata", data);
+
     };
 
 
