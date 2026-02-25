@@ -1,9 +1,17 @@
-import React from 'react'
-
-const Storage = () => {
-    return (
-        <div>Storage</div>
-    )
+export const getStorageItem = (key) => {
+    if (!key) {
+        return
+    }
+    return JSON.parse(localStorage.getItem(key)) || [];
 }
 
-export default Storage
+export const setStorageItem = (key, data) => {
+    if (!key || !data) {
+        return
+    }
+    localStorage.setItem(key, JSON.stringify(data));
+}
+
+export const calculateTotal = (cartItems) => {
+    let sum = cartItems + cartItems;
+}

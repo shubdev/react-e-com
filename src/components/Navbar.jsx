@@ -22,11 +22,23 @@ const Navbar = () => {
         },
         {
             name: "users",
-            Link: "/users"
+            Link: "/users",
+            id: 4,
         },
         {
             name: "produt",
-            Link: "/product"
+            Link: "/product",
+            id: 5,
+        },
+        {
+            name: "login",
+            Link: "/login",
+            id: 6,
+        },
+        {
+            name: "dashboard",
+            Link: "/dashboard",
+            id: 7,
         }
     ]
     return (
@@ -39,7 +51,6 @@ const Navbar = () => {
                     </div>
                 )
             }
-
         </div>
     )
 }
