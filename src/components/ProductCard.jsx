@@ -1,4 +1,5 @@
 import React from 'react'
+import { CustomButton } from './CustomButton';
 
 const ProductCard = ({ product }) => {
     // product = { title, price, category, rating, description, image }
@@ -29,9 +30,13 @@ const ProductCard = ({ product }) => {
                     {/* Price + Button */}
                     <div className="flex items-center justify-between mt-2">
                         <p className="text-indigo-600 font-bold text-xl">${product.price}</p>
-                        <button onClick={() => onClickofCartSubmit} className="bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
-                            Add to Cart 🛒
-                        </button>
+
+                        <CustomButton
+                            label={"Add to Cart 🛒"}
+                            onClick={() => onClickofCartSubmit}
+                            className="bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200"
+                        />
+
                     </div>
                 </div>
 
