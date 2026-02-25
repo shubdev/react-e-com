@@ -16,20 +16,20 @@ const Navbar = () => {
             id: 2
         },
         {
-            name: "produts",
-            Link: "/produts",
+            name: "products",
+            Link: "/products",
             id: 3
         },
-        {
-            name: "users",
-            Link: "/users",
-            id: 4,
-        },
-        {
-            name: "produt",
-            Link: "/product",
-            id: 5,
-        },
+        // {
+        //     name: "users",
+        //     Link: "/users",
+        //     id: 4,
+        // },
+        // {
+        //     name: "product",
+        //     Link: "/product",
+        //     id: 5,
+        // },
         {
             name: "login",
             Link: "/login",

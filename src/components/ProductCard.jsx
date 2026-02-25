@@ -1,13 +1,12 @@
 import React from 'react'
 import { CustomButton } from './CustomButton';
+import { useCart } from '../customHooks/useCart';
 
 const ProductCard = ({ product }) => {
     // product = { title, price, category, rating, description, image }
-    console.log("prod", product);
+    // console.log("prod", product);
 
-    const onClickofCartSubmit = (e) => {
-
-    };
+    const { cart, addToCart } = useCart()
 
     return (
         <>
@@ -33,7 +32,7 @@ const ProductCard = ({ product }) => {
 
                         <CustomButton
                             label={"Add to Cart 🛒"}
-                            onClick={() => onClickofCartSubmit}
+
                             className="bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200"
                         />
 

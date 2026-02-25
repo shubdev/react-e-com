@@ -12,6 +12,7 @@ import Layout from './components/Layout.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import Dashboard from './components/Dashboard.jsx';
 import LoginPage from './pages/LoginPage.jsx';
+import Inputform from './customHooks/Inputform.jsx';
 
 //create dynamic routing routing.
 const router = createBrowserRouter([
@@ -33,16 +34,20 @@ const router = createBrowserRouter([
         element: <Users />
       },
       {
-        path: "/produts",
+        path: "/products",
         element: <ProductPage />
       },
       {
-        path: "/produt/:productId",
+        path: "/product/:productId",
         element: <Product />
       },
       {
         path: "/login",
         element: <LoginPage />
+      },
+      {
+        path: "/addnewproductform",
+        element: <Inputform />
       },
       {
         element: <ProtectedRoute />,
